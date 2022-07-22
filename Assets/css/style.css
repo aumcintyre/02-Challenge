@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    padding: 5px;
+    background-color: darkred;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 48px;
+    color: antiquewhite;
+    padding-left: 15px;
+}
+
+
+ul {
+    
+}
+
+ul li {
+color: aqua;
+
+}
