@@ -1,6 +1,6 @@
 :root {
     --links: whitesmoke;
-    --banner: darkred;
+    --banner: navy;
 
 }
 
@@ -11,9 +11,9 @@
 
 body {
     display: block;
-    background-image: url(/Assets/images/assemblyfloor.png);
+    /* background-image: url(/Assets/images/assemblyfloor.png);
 background-repeat: no-repeat;
-background-size: cover;
+background-size: cover; */
 }
 
 a {
@@ -26,6 +26,7 @@ header {
     width: 100%;
     display: block;
     position: fixed;
+    z-index: 1;
 }
 
 header h1 {
@@ -131,6 +132,14 @@ footer h2 {
     vertical-align: top;
     float: left;
     position: relative;
+    background: repeating-linear-gradient(
+  45deg,
+  rgba(139, 0 ,0, .1),
+  rgba(139, 0 ,0, .1)10px,
+  rgba(245, 245, 245, .1) 10px,
+  rgba(245, 245, 245, .1) 20px
+);
+z-index: 0;
 }
 
 .card2 {
@@ -143,6 +152,13 @@ footer h2 {
     vertical-align: top;
     float: left;
     position: relative;
+    background: repeating-linear-gradient(
+  45deg,
+  rgba(139, 0 ,0, .1),
+  rgba(139, 0 ,0, .1)10px,
+  rgba(245, 245, 245, .1) 10px,
+  rgba(245, 245, 245, .1) 20px
+);
 }
 
 .crest {
