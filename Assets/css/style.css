@@ -1,177 +1,201 @@
 :root {
     --links: whitesmoke;
     --banner: navy;
-
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 body {
-    display: block;
-    /* background-image: url(/Assets/images/assemblyfloor.png);
-background-repeat: no-repeat;
-background-size: cover; */
-}
-
-a {
-    color:var(--links);
-}
-
-header {
-    padding: 15px;
-    background-color: var(--banner);
-    width: 100%;
-    display: block;
-    position: fixed;
-    z-index: 1;
-}
-
-header h1 {
-    font-size: 48px;
-    color: var(--links);
-    padding-left: 15px;
-    display: inline-block;
-    font-family:'Times New Roman';
-    text-decoration: underline;
-}
-
-header nav {
-    float: right;
-}
-
-header nav ul {
-    list-style-type: none;
-    border: white 1px solid;
-    padding-bottom: 12px;
-    padding-right: 60px;
-}
-
-header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
-    color: var(--links);
-    font-size: 24px;
-    padding-top: 14px;
-}
-
-main {
-   margin-top: 100px;
-    display: inline-block;
-    position: absolute;
-    justify-content: flex-start;
-}
-
-aside {
-    width: 25vh;
-    height: 80vh;
-    padding: 15px;
-    margin-left: 15px;
-    margin-top: 145px;
-    position: fixed;
-    right: 0;
-    border: darkred 2px dashed;
-    margin-right: 25px;
-    display: inline-block;
-    background: repeating-linear-gradient(
-  45deg,
-  rgba(139, 0 ,0, .1),
-  rgba(139, 0 ,0, .1)10px,
-  rgba(245, 245, 245, .1) 10px,
-  rgba(245, 245, 245, .1) 20px
-);
-  }
-
-aside h1{
-    font-size: 36px;
-    color: whitesmoke;
-    text-shadow: 3px black 1 ;
-}
-
-footer {
-    padding: 15px;
-    background-color: var(--banner);
-    width: 100%;
-    display: block;
-    position: fixed;
-    bottom: 0;
-    /* left: 0; */
-}
-
-footer h2 {
-    font-size: 16px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-align: right;
-    color: var(--links);
-    bottom: 0;
-}
-
-#footleft {
-    position: fixed;
-    left: 0;
-    padding-bottom: 5px;
-    bottom: 0;
-}
-
-#footright {
-    position: fixed;
-    right: 0;
-    padding-bottom: 5px;
-    bottom: 0;
-}
-
-.card1 {
-    height: 45vh;
-    width: 65vh;
-    border: darkred 2px dashed;
-    margin: 40px 25px 45px 25px; 
-    display: flex;
-    flex-direction: row;
-    vertical-align: top;
-    float: left;
-    position: relative;
-    background: repeating-linear-gradient(
-  45deg,
-  rgba(139, 0 ,0, .1),
-  rgba(139, 0 ,0, .1)10px,
-  rgba(245, 245, 245, .1) 10px,
-  rgba(245, 245, 245, .1) 20px
-);
-z-index: 0;
-}
-
-/* .card2 {
-    height: 45vh;
-    width: 65vh;
-    border: darkred 2px dashed;
-    margin: 25px 25px 45px 25px; 
-    display: flex;
-    flex-direction: row;
-    vertical-align: top;
-    float: left;
-    position: relative;
-    background: repeating-linear-gradient(
-  45deg,
-  rgba(139, 0 ,0, .1),
-  rgba(139, 0 ,0, .1)10px,
-  rgba(245, 245, 245, .1) 10px,
-  rgba(245, 245, 245, .1) 20px
-);
-} */
-
-.crest {
-    position: absolute;
-    bottom: 0;
-    margin-left: 120px;
-    border-top: 2px darkred dashed;
-    border-left: 2px darkred dashed;
-    border-right: 2px darkred dashed;
-    padding: 15px;
+    background-color: rgb(197, 223, 248);
 }
 
 a:hover {
     color: gray;
     cursor: grab;
+}
+
+a:visited {
+    color: darkred;
+}
+
+header a {
+    color: var(--links);
+}
+
+.container {
+    width: 100%;
+    max-height: 100px;
+    padding-left: 4%;
+    padding-right: 4%;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: #001241;
+}
+
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.crest {
+    width: 125px;
+    height: auto;
+    padding-left: 50px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: var(--links);
+}
+
+nav {
+    flex: 1;
+    cursor: pointer;
+    text-align: right;
+}
+
+nav ul li {
+    display: inline-block;
+    color: var(--links);
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 18px;
+
+}
+
+/* HEADER ENDS HERE */
+
+.titleImage {
+    border: 1px black solid;
+    height: 400px;
+    background-image: url(https://blog.radware.com/wp-content/uploads/2019/10/Confidence.jpg);
+    background-size: stretch;
+    background-position: -100px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+
+}
+
+hr {
+    height: 2px;
+    background-color: darkred;
+    border: none;
+    margin: 25px 0 5px;
+}
+.aboutMe {
+    /* box-sizing: border-box; */
+    margin-top: 10px;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.aboutMe.sidenav {
+    /* box-sizing: border-box; */
+    width: 15%;
+    height: 380px;
+    margin: 10px 25px 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    border-left: 2px darkred solid;
+    padding-left: 10px;
+}
+
+.aboutMe.card1 {
+    color: #001241;
+    text-shadow: white 1px 1px;
+    font-size: 40px;
+    /* box-sizing: border-box; */
+    height: 350px;
+    width: 100%;
+    border: darkred 2px solid;
+    margin: 10px 0 10px 10px;
+    display: flex;
+   opacity: .4;
+    z-index: 0;
+}
+
+.projects {
+    box-sizing: border-box;
+    margin-top: 10px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects.sidenav {
+    box-sizing: border-box;
+    width: 15%;
+    height: 1360px;
+    margin: 10px 25px 15px 0;
+    display: flex;
+    justify-content: flex-start;
+    vertical-align: top;
+    position: absolute;
+    right: 0;
+    border-left: 2px darkred solid;
+    padding-left: 10px;
+}
+
+ .sidenav h2 {
+font-size: 24px;
+color: whitesmoke;
+ }
+
+.projects.card1 {
+    color: #001241;
+    text-shadow: white 1px 1px;
+    font-size: 40px;
+    box-sizing: border-box;
+    height: 450px;
+    width: 100%;
+    border: darkred 2px solid;
+    margin: 10px 0 10px 10px;
+    display: flex;
+   background-image: url(/Assets/images/digital-marketing-meeting.jpg);
+   background-size: cover;
+   opacity: .4;
+    z-index: 0;
+}
+
+.card2 {
+    box-sizing: border-box;
+    height: 400px;
+    width: 40%;
+    min-width: 200px;
+    border: darkred 2px solid;
+    margin: 30px 0 30px 100px;
+    display: flex;
+    flex-direction: column;
+    vertical-align: top;
+    background-color: #001241;
+}
+
+footer {
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: var(--banner);
+    width: 100%;
+    /* display: flex;
+    position: fixed;
+    bottom: 0; */
+}
+
+footer h2 {
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--links);
+    bottom: 0;
+    text-align: center;
+    padding: 0;
 }
