@@ -28,8 +28,8 @@ a:visited {
 .container {
     width: 100%;
     max-height: 100px;
-    padding-left: 4%;
-    padding-right: 4%;
+    padding-left: 2%;
+    padding-right: 2%;
     box-sizing: border-box;
     overflow: hidden;
     background-color: #001241;
@@ -43,9 +43,8 @@ a:visited {
 }
 
 .crest {
-    width: 125px;
+    width: 100px;
     height: auto;
-    padding-left: 50px;
 }
 
 header a {
@@ -114,6 +113,10 @@ hr {
     padding-left: 10px;
 }
 
+.bitMoji {
+    opacity: .8;
+}
+
 .aboutMe.card1 {
     color: #001241;
     text-shadow: white 1px 1px;
@@ -123,7 +126,6 @@ hr {
     border: darkred 2px solid;
     margin: 10px 0 10px 10px;
     display: flex;
-   opacity: .4;
     z-index: 0;
 }
 
