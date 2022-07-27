@@ -6,17 +6,18 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding: 0;
 }
 
 body {
-    background-color: rgb(197, 223, 248);
+    background-color: rgb(229, 241, 253);
 }
 
 a:hover {
     color: gray;
     cursor: grab;
+    opacity: 0;
 }
 
 a:visited {
@@ -94,7 +95,7 @@ hr {
 
 .aboutMe {
     margin-top: 10px;
-    width: 80%;
+    width: 83%;
     height: 400px;
     display: flex;
     flex-wrap: wrap;
@@ -103,7 +104,6 @@ hr {
 .aboutMe.sidenav {
     width: 15%;
     height: 380px;
-    margin: 10px 25px 15px 0;
     display: flex;
     justify-content: flex-start;
     vertical-align: top;
@@ -124,6 +124,7 @@ hr {
     height: 350px;
     width: 100%;
     border: darkred 2px solid;
+    border-radius: 5px;
     margin: 10px 0 10px 10px;
     display: flex;
     z-index: 0;
@@ -131,17 +132,30 @@ hr {
 
 /* END ABOUT ME SECTION */
 
+
+/* BEGIN PROJECTS SECTION */
 .projects {
     margin-top: 10px;
-    width: 80%;
+    width: 83%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects h2 {
+    background-color: darkred;
+    margin-bottom: 400px;
+    width: 83%;
+    padding: 5px;
+    border: darkred 2px solid;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
 }
 
 .projects.sidenav {
     width: 15%;
-    height: 1360px;
-    margin: 10px 25px 15px 0;
+    height: 1300px;
+    /* margin: 10px 25px 15px 0; */
     display: flex;
     justify-content: flex-start;
     vertical-align: top;
@@ -151,7 +165,7 @@ hr {
     padding-left: 10px;
 }
 
- .sidenav h2 {
+ .sidenav h3 {
 font-size: 24px;
 color: whitesmoke;
  }
@@ -161,25 +175,32 @@ color: whitesmoke;
     text-shadow: white 1px 1px;
     font-size: 40px;
     height: 450px;
-    width: 100%;
+    width: 85%;
     border: darkred 2px solid;
-    margin: 10px 0 10px 10px;
+    border-radius: 5px;
+    /* margin: 10px 110px 10px; */
     display: flex;
    background-image: url(/Assets/images/digital-marketing-meeting.jpg);
    background-size: cover;
-   opacity: .4;
+   opacity: .8;
     z-index: 0;
+    
 }
 
+.projects.card1:hover {
+    opacity: 1;
+    box-shadow: 3px 3px 3px #191b22;
+}
 .card2 {
     height: 400px;
-    width: 40%;
-    min-width: 200px;
+    width: 45%;
+    min-width: 400px;
     border: darkred 2px solid;
-    margin: 30px 0 30px 100px;
+    border-radius: 5px;
+    margin: 10px;
     display: flex;
     flex-direction: column;
-    vertical-align: top;
+    /* vertical-align: top; */
     background-color: #001241;
 }
 
