@@ -76,10 +76,10 @@ nav ul li {
     border: 1px black solid;
     height: 400px;
     background-image: url(https://blog.radware.com/wp-content/uploads/2019/10/Confidence.jpg);
-    background-size: stretch;
+    background-size: cover;
     background-position: -100px;
     background-repeat: no-repeat;
-
+    background-position: center;
 }
 
 hr {
@@ -225,7 +225,7 @@ hr {
     margin: 10px;
     display: flex;
     flex-direction: column;
-    background-image: url(/Assets/images/portfolio-screenshot.png);
+    /* background-image: url(/Assets/images/portfolio-screenshot.png); */
     background-size: cover;
     opacity: .8;
 }
@@ -239,104 +239,10 @@ hr {
     margin: 0px 50px 350px;
 }
 
-.card3 {
-    color: whitesmoke;
-    text-shadow: #001241 3px 3px 3px;
-    font-size: 20px;
-    height: 400px;
-    width: 45%;
-    min-width: 400px;
-    border: darkred 2px solid;
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    background-image: url(/Assets/images/rhcp.jpg);
-    background-size: cover;
-    opacity: .8;
-}
-
-.card3 h1 {
-    background-color: rgb(117, 0, 0);
-    margin-bottom: 400px;
-    width: 83%;
-    padding: 5px;
-    border-radius: 0 0 5px 5px;
-    margin: 0px 50px 350px;
-}
-
-.card4 {
-    color: whitesmoke;
-    text-shadow: #001241 3px 3px 3px;
-    font-size: 20px;
-    height: 400px;
-    width: 45%;
-    min-width: 400px;
-    border: darkred 2px solid;
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    background-image: url(/Assets/images/st-andrews.jpg);
-    background-size: cover;
-    opacity: .8;
-}
-
-.card4 h1 {
-    background-color: rgb(117, 0, 0);
-    margin-bottom: 400px;
-    width: 83%;
-    padding: 5px;
-    border-radius: 0 0 5px 5px;
-    margin: 0px 50px 350px;
-}
-
-.card5 {
-    color: whitesmoke;
-    text-shadow: #001241 3px 3px 3px;
-    font-size: 20px;
-    height: 400px;
-    width: 45%;
-    min-width: 400px;
-    border: darkred 2px solid;
-    border-radius: 5px;
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    background-image: url(/Assets/images/survivor.jpg);
-    background-size: cover;
-    opacity: .8;
-}
-
-.card5 h1 {
-    background-color: rgb(117, 0, 0);
-    margin-bottom: 400px;
-    width: 83%;
-    padding: 5px;
-    border-radius: 0 0 5px 5px;
-    margin: 0px 50px 350px;
-}
-
 .projects.card2:hover {
     opacity: 1;
     box-shadow: 3px 3px 3px #191b22;
 }
-
-.projects.card3:hover {
-    opacity: 1;
-    box-shadow: 3px 3px 3px #191b22;
-}
-
-.projects.card4:hover {
-    opacity: 1;
-    box-shadow: 3px 3px 3px #191b22;
-}
-
-.projects.card5:hover {
-    opacity: 1;
-    box-shadow: 3px 3px 3px #191b22;
-}
-
 /* END PROJECTS SECTION */
 
 /* BEGIN CONTACT SECTION */
