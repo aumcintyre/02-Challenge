@@ -18,10 +18,6 @@ a:hover {
     cursor: grab;
 }
 
-a:visited {
-    color: darkred;
-}
-
 /* HEADER BEGINS HERE */
 
 .container {
