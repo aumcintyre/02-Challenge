@@ -192,7 +192,6 @@ hr {
     border: darkred 2px solid;
     border-radius: 5px;
     display: flex;
-    background-image: url(/Assets/images/digital-marketing-meeting.jpg);
     background-size: cover;
     opacity: .8;
     z-index: 0;
